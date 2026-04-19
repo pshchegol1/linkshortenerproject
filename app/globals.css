@@ -1,3 +1,48 @@
+/* Force Clerk modals and overlays to always use dark mode and match app theme */
+.cl-internal-modal-root,
+.cl-modalRoot,
+.clerk,
+.clerk-modal,
+.clerk-sign-in,
+.clerk-sign-up,
+.cl-signIn-root,
+.cl-signUp-root,
+.cl-userButton-root {
+  color-scheme: dark !important;
+  background: var(--background, #09090b) !important;
+  --clerk-color-background: var(--background, #09090b) !important;
+  --clerk-color-foreground: var(--foreground, #fafafa) !important;
+  --clerk-color-input: var(--input, #18181b) !important;
+  --clerk-color-card: var(--card, #18181b) !important;
+  --clerk-color-card-foreground: var(--card-foreground, #fafafa) !important;
+  --clerk-color-primary: var(--primary, #fafafa) !important;
+  --clerk-color-primary-foreground: var(--primary-foreground, #09090b) !important;
+  --clerk-color-muted: var(--muted, #27272a) !important;
+  --clerk-color-muted-foreground: var(--muted-foreground, #a1a1aa) !important;
+  --clerk-color-border: var(--border, #27272a) !important;
+  --clerk-color-ring: var(--ring, #a1a1aa) !important;
+}
+/* Force Clerk modals to always use dark mode and match app theme */
+.cl-internal-modal-root,
+.cl-modalRoot,
+.clerk,
+.clerk-modal,
+.clerk-sign-in,
+.clerk-sign-up {
+  color-scheme: dark !important;
+  background: var(--background, #09090b) !important;
+  --clerk-color-background: var(--background, #09090b) !important;
+  --clerk-color-foreground: var(--foreground, #fafafa) !important;
+  --clerk-color-input: var(--input, #18181b) !important;
+  --clerk-color-card: var(--card, #18181b) !important;
+  --clerk-color-card-foreground: var(--card-foreground, #fafafa) !important;
+  --clerk-color-primary: var(--primary, #fafafa) !important;
+  --clerk-color-primary-foreground: var(--primary-foreground, #09090b) !important;
+  --clerk-color-muted: var(--muted, #27272a) !important;
+  --clerk-color-muted-foreground: var(--muted-foreground, #a1a1aa) !important;
+  --clerk-color-border: var(--border, #27272a) !important;
+  --clerk-color-ring: var(--ring, #a1a1aa) !important;
+}
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
